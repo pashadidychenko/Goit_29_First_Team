@@ -1,0 +1,40 @@
+@font-face {
+    font-family: 'Open sans';
+    font-style: semibold;
+    font-weight: 600;
+    src: local('Open sans'), local('Open sans'),
+         url('../fonts/open-sans-v17-latin-600.woff2') format('woff2'),
+         url('../fonts/open-sans-v17-latin-600.woff') format('woff');
+  }
+  @font-face {
+    font-family: 'Open sans';
+    font-style: bold;
+    font-weight: 700;
+    src: local('Open sans'), local('Open sans'),
+         url('../fonts/open-sans-v17-latin-700.woff2') format('woff2'),
+         url('../fonts/open-sans-v17-latin-700.woff') format('woff');
+  }
+  @font-face {
+    font-family: 'Open sans';
+    font-style: extrabold;
+    font-weight: 800;
+    src: local('Open sans'), local('Open sans'),
+         url('../fonts/open-sans-v17-latin-800.woff2') format('woff2'),
+         url('../fonts/open-sans-v17-latin-800.woff') format('woff');
+  }
+  @font-face {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Ubuntu'), local('Ubuntu'),
+         url('../fonts/ubuntu-v14-latin-regular.woff2') format('woff2'),
+         url('../fonts/ubuntu-v14-latin-regular.woff') format('woff');
+  }
+  @font-face {
+    font-family: 'Ubuntu';
+    font-style: bold;
+    font-weight: 700;
+    src: local('Ubuntu'), local('Ubuntu'),
+         url('../fonts/ubuntu-v14-latin-700.woff2') format('woff2'),
+         url('../fonts/ubuntu-v14-latin-700.woff') format('woff');
+  }
