@@ -1,9 +1,17 @@
 .header {
   background-image: url(../images/banner.jpg);
+
   background-size: cover;
   background-position: center;
   padding-bottom: 60px;
   position: relative;
+  @media (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi) {
+    background-image: url(../images/banner@2x.jpg);
+  }
+  @media (min-width: 1440px) {
+    margin-bottom: 118px;
+  }
 }
 
 .header__nav {
