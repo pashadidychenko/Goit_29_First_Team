@@ -10,12 +10,12 @@
   color: $title-color;
   margin-bottom: 22px;
   @media (min-width: 768px) and (max-width: 1439px) {
-    justify-content: flex-start;
+    width: 620px;
+   justify-content: flex-start;
     margin-bottom: 68px;
-    padding-left: 76px;
     font-size: 33px;
   }
-  @media (min-width: 1439px) {
+  @media (min-width: 1440px) {
     width: 1300px;
     justify-content: flex-start;
     margin-bottom: 68px;
@@ -61,7 +61,7 @@
     &--blue {
       background-color: $bc-blue;
     }
-    @media (min-width: 1439px) {
+    @media (min-width: 1440px) {
       margin: 0;
     }
   }
@@ -72,7 +72,7 @@
     justify-content: space-between;
     flex-wrap: wrap;
   }
-  @media (min-width: 1439px) {
+  @media (min-width: 1440px) {
     width: 1300px;
     margin: 0px 0px 116px;
     display: flex;
@@ -100,7 +100,7 @@
     font-size: 16px;
     font-weight: 400;
     color: $block-color;
-    @media (min-width: 1439px) {
+    @media (min-width: 1440px) {
       font-size: 18px;
     }
   }
