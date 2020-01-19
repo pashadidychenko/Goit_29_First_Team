@@ -1,23 +1,20 @@
-.description{
-  
-  &__content{
-
-    &--wrapper{
-      width: 85%;
+.description {
+  &__content {
+    &--wrapper {
+      width: 280px;
       margin: 0 auto;
     }
-  
-    &--text{
+
+    &--text {
       color: $block-color;
-      font-family: 'Ubuntu';
+      font-family: "Ubuntu";
       font-style: normal;
       font-weight: 400;
       text-align: left;
       position: relative;
       padding-top: 60px;
-      
 
-      &::before{
+      &::before {
         content: "";
         background-image: url(../images/icon/quote.png);
         background-repeat: no-repeat;
@@ -29,41 +26,38 @@
         top: 30px;
         left: 0;
       }
-      
     }
-    &--image{
+    &--image {
       background-image: url(../images/group.jpg);
       display: block;
-      width: 85%;
+      width: 280px;
       height: 320px;
-      position: relative;
       object-fit: cover;
       margin: 0 auto;
       border-radius: 5px;
     }
   }
 
+  &__wrapper {
+    width: 280px;
+    background-color: $bc-secondary-color;
+    border-radius: 7px;
+    margin: 0 auto;
+    margin-top: 40px;
+    height: 230px;
 
-  &__wrapper{
-  width: 85%;
-  background-color: $bc-secondary-color;
-  border-radius: 7px;
-  margin: 0 auto;
-  margin-top: 40px;
-  height: 230px;
-
-    &--text{
-      font-family: 'Ubuntu';
+    &--text {
+      font-family: "Ubuntu";
       color: $prymary-color;
       display: block;
-      width: 70%;
+      width: 230px;
       text-align: center;
       margin: 0 auto;
       font-size: 18px;
       line-height: 24px;
       padding-top: 30px;
 
-      &::before{
+      &::before {
         content: "";
         display: block;
         width: 60px;
@@ -71,50 +65,51 @@
         background-color: $bc-prymary-color;
         margin: 0 auto;
         margin-bottom: 15px;
-        
       }
     }
   }
 }
 
-@media screen and (min-width: 768px){
-
-  .description__content--wrapper{
-    width: 75%;
+@media screen and (min-width: 768px) {
+  .description__content--wrapper {
+    width: 620px;
   }
 
-  .description__content--text::before{
+  .description__content--text {
+    line-height: 25px;
+  }
+
+  .description__content--text::before {
     width: 25px;
     height: 20px;
     top: 40px;
     left: -30px;
   }
 
-  .description__content--image{
-    width: 75%;
+  .description__content--image {
+    width: 620px;
     background-repeat: no-repeat;
     background-size: cover;
   }
 
-  .description__wrapper{
-    width: 75%;
+  .description__wrapper {
+    width: 620px;
     position: relative;
     height: 180px;
     border-radius: 3px;
     margin-top: 70px;
   }
 
-  .description__wrapper--text{
-    max-width: 450px;
+  .description__wrapper--text {
+    width: 450px;
     font-size: 20px;
     line-height: 28px;
     text-align: left;
     display: block;
     position: relative;
-    width: 75%;
   }
 
-  .description__wrapper--text::before{
+  .description__wrapper--text::before {
     display: inline-block;
     height: 100px;
     width: 2px;
@@ -124,61 +119,59 @@
   }
 }
 
-@media screen and (min-width: 1024px){
-
-  .description{
-    width: 95%;
-    max-width: 1300px;
+@media screen and (min-width: 1440px) {
+  .description {
+    width: 1300px;
     margin: 0 auto;
   }
 
-  .description__content{
+  .description__content {
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
-    max-width: 1400px;
+    width: 1265px;
   }
 
-  .description__content--wrapper{
-    width: 50%;
+  .description__content--wrapper {
+    width: 500px;
   }
 
-  .description__content--text{
-    width: 80%;
+  .description__content--text {
+    width: 500px;
     font-size: 20px;
     line-height: 35px;
     padding: 0;
   }
 
-  .description__content--text::before{
+  .description__content--text::before {
     font-size: 90px;
     top: -10px;
     left: -40px;
   }
 
-  .description__content--image{
-    min-width: 300px;
-    max-width: 650px;
+  .description__content--image {
+    width: 650px;
+    height: 400px;
     margin: 0;
     margin-right: 100px;
   }
 
-  .description__wrapper{
-    width: 100%;
-    max-width: 1300px;
+  .description__wrapper {
+    width: 1300px;
+    height: 230px;
   }
 
-  .description__wrapper--text{
+  .description__wrapper--text {
     font-size: 25px;
     line-height: 35px;
-    display: block;
     position: relative;
-    max-width: 800px;
+    padding-top: 60px;
+    width: 800px;
   }
 
-  .description__wrapper--text::before{
+  .description__wrapper--text::before {
+    top: 60px;
     left: -30px;
   }
 }
