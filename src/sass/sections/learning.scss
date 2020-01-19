@@ -1,0 +1,217 @@
+.learn__item--wrap {
+  height: 55px;
+  width: 55px;
+}
+
+.learn__item--wrap--hands {
+  content: " ";
+  background-image: url(../images/learn_png/hands.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: $bc-red;
+  border-radius: 100px;
+}
+
+.learn__item--wrap--fingers {
+  content: " ";
+  background-image: url(../images/learn_png/fingers.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: $bc-fiolet;
+  border-radius: 100px;
+}
+
+.learn__item--wrap--money {
+  content: " ";
+  background-image: url(../images/learn_png/money.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: $bc-blue;
+  border-radius: 100px;
+}
+
+.learn__item--wrap--pencil {
+  content: " ";
+  background-image: url(../images/learn_png/pencil.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: $bc-fiolet;
+  border-radius: 100px;
+}
+
+.learn__item--wrap--file {
+  content: " ";
+  background-image: url(../images/learn_png/file.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: $bc-red;
+  border-radius: 100px;
+}
+
+.learn__item--wrap--target {
+  content: " ";
+  background-image: url(../images/learn_png/target.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: $bc-orange;
+  border-radius: 100px;
+}
+
+.learn__item--wrap--earth {
+  content: " ";
+  background-image: url(../images/learn_png/earth.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: $bc-orange;
+  border-radius: 100px;
+}
+
+.icon__objective {
+  background-image: url(../images/learn_png/objective.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  margin-left: 20px;
+  background-color: $bc-prymary-color;
+  border-radius: 100px;
+
+  @media (min-width: 768px) {
+    background-image: url(../images/learn_png/cub.png);
+  }
+}
+
+.title__learn--text {
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+.learn__item {
+  width: 200px;
+  margin: 25px;
+}
+
+.learn--container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: baseline;
+  padding-left: 45px;
+  max-width: 100px;
+}
+
+.section__learn {
+  width: 320px;
+  margin: 0 auto;
+}
+
+.title__learn {
+  display: flex;
+  align-items: center;
+}
+
+.learn__item-text {
+  font-family: $secondary-fonts;
+  font-style: normal;
+  font-weight: 400;
+  width: 200px;
+}
+
+@media (min-width: 768px) {
+  .section__learn {
+    width: 620px;
+    margin: 0 auto;
+  }
+
+  .icon__objective{
+    margin-left: 0;
+  }
+  
+  .learn__item--wrap {
+    height: 80px;
+    width: 80px;
+  }
+
+  .learn__item {
+    width: 240px;
+    margin-right: 40px;
+  }
+
+  .title__learn--text {
+    text-transform: uppercase;
+    font-size: 39px;
+  }
+
+  .learn--container {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 40px;
+    max-width: 768px;
+  }
+
+  .learn__item {
+    width: 220px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .section__learn {
+    background-image: url(../images/learn_png/bg.jpg);
+    max-width: 100%;
+    margin: 0 auto;
+    margin-bottom: 118px;
+  }
+
+  .learn__item--wrap {
+    height: 96px;
+    width: 96px;
+  }
+  .title__learn--text {
+    text-transform: uppercase;
+    font-size: 33px;
+  }
+
+  .learn--container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 70px;
+    padding-left: 0px;
+    padding-bottom: 100px;
+    max-width: 1440px;
+  }
+
+  .learn__item {
+    width: 245px;
+    margin: 0;
+    margin-bottom: 50px;
+    margin-right: 80px;
+  }
+
+  .learn__wrap {
+    margin: 0 auto;
+  }
+
+  .section__learn {
+    padding-top: 100px;
+    width: 1920px;
+  }
+  .learn__wrap--container {
+    width: 1300px;
+    margin: 0 auto;
+  }
+}
+
+.title__learn--text {
+  font-family: $prymary-fonts;
+  font-style: normal;
+  font-weight: 700;
+  color: $title-color;
+}
+
+.learn__item-text {
+  font-family: $secondary-fonts;
+  font-style: normal;
+  font-weight: 400;
+  width: 200px;
+  color: $block-color;
+}
