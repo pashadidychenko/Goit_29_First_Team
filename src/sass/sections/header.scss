@@ -18,8 +18,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 16px;
-  padding-top: 16px;
+  padding: 16px 16px 0;
 
   @media (min-width: 768px) {
     width: 676px;
@@ -32,18 +31,74 @@
   }
 }
 
-.header__burger-img:hover .overlay {
-  display: block;
-  z-index: 1;
-}
-
-.header__burger-img {
-  display: block;
-  width: 28px;
-  height: 19px;
-
+.header__burger {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border: none;
+  background: none;
+  overflow: hidden;
+  z-index: 2;
   @media (min-width: 1440px) {
     display: none;
+
+  }
+
+  &.is-active {
+    .header__burger-line {
+      &:nth-child(1) {
+        transform: rotate(45deg);
+        left: 4px;
+      }
+
+      &:nth-child(2) {
+        opacity: 0;
+      }
+
+      &:nth-child(3) {
+        transform: rotate(-45deg);
+        left: 4px;
+        top: 20px;
+      }
+    }
+  }
+}
+
+.header__burger-inner {
+  display: block;
+  position: relative;
+  width: 30px;
+  height: 20px;
+
+}
+
+.header__burger-line {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 3px;
+  left: 0;
+  background: #ffffff;
+  transform-origin: left;
+  transition: all 0.3s ease-in-out;
+  visibility: hidden;
+
+  &:nth-child(1) {
+    top: 0;
+  }
+
+  &:nth-child(2) {
+    top: 8px;
+  }
+
+  &:nth-child(3) {
+    bottom: 1px;
+  }
+
+  @media (max-width: 1439px) {
+    visibility: visible;
   }
 }
 
@@ -169,10 +224,6 @@
 .header__scroll {
   display: flex;
   justify-content: center;
-  visibility: visible;
-  @media (min-width: 1440px) {
-    visibility: hidden;
-  }
 
 }
 
@@ -204,11 +255,18 @@
   width: 100%;
   height: 100%;
   opacity: 0;
-  visibility: hidden;
   top: 0;
   left: 0;
+
   background-color: $bc-secondary-color;
-  z-index: -1;
+  transform: translateY(-100%);
+  transition: all 0.3s ease-in-out;
+
+  .header.nav-open & {
+    z-index: 1;
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .overlay_open {
@@ -236,13 +294,13 @@
   justify-content: space-between;
   align-items: center;
   list-style: none;
+  padding: 0;
   margin-top: 50px;
   margin-bottom: 50px;
 }
 
 .overlay__menu-link {
   text-decoration: none;
-  text-transform: uppercase;
   color: $prymary-color;
   font-weight: 700;
   font-size: 28px;
