@@ -1,0 +1,51 @@
+body {
+  position: relative;
+}
+
+.arrow-top {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .arrow-top {
+    display: block;
+    border-radius: 50%;
+    background-color: $button-color;
+    width: 65px;
+    height: 65px;
+    position: absolute;
+    bottom: 240px;
+    right: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .arrow-top__button {
+    width: 14px;
+    height: 14px;
+    background-image: url(../images/icon/arrow.png);
+    background-repeat: no-repeat;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .arrow-top {
+    display: block;
+    border-radius: 50%;
+    background-color: $button-color;
+    width: 65px;
+    height: 65px;
+    position: fixed;
+    right: 40px;
+    bottom: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .arrow-top__button {
+    width: 14px;
+    height: 14px;
+    background-repeat: no-repeat;
+  }
+}
