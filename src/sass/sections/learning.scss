@@ -178,6 +178,7 @@
   .learn__item {
     width: 245px;
     margin: 0;
+    margin-bottom: 50px;
     margin-right: 80px;
   }
 
@@ -199,6 +200,7 @@
   font-family: $prymary-fonts;
   font-style: normal;
   font-weight: 700;
+  color: $title-color;
 }
 
 .learn__item-text {
@@ -206,4 +208,5 @@
   font-style: normal;
   font-weight: 400;
   width: 200px;
+  color: $block-color;
 }
