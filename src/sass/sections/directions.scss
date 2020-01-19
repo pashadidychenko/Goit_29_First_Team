@@ -112,6 +112,8 @@
         box-shadow: 3px 5.196px 18px 0px rgba(0, 0, 0, 0.1);
         .directions__item-icon {
             color: $prymary-color;
+            position: relative;
+            left: 20px;
         }
         .directions__item-years {
             color: $prymary-color;
@@ -150,7 +152,7 @@
     width: 20px;
     height: 20px;
     color: $bc-prymary-color;
-    transition: color 0.3s ease-in-out;
+    transition: all 0.4s ease-in-out;
     svg {
         display: block;
         width: 100%;
@@ -176,6 +178,7 @@
     font-size: 16px;
     color: $block-color;
     line-height: 20px;
+    transition: color 0.4s ease-in-out;
     @media (min-width: 768px) and (max-width: 1439px) {
         line-height: 22px;
     }
@@ -192,6 +195,7 @@
     text-decoration-color: #e9ac38;
     color: #e9ac38;
     font-size: 30px;
+    transition: color 0.4s ease-in-out;
     @media (min-width: 768px) {
         font-size: 40px;
     }
@@ -204,4 +208,5 @@
     text-decoration: underline;
     font-size: 13px;
     text-decoration-color: #e9ac38;
+    transition: color 0.4s ease-in-out;
 }
