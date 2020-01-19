@@ -4,15 +4,25 @@
     font-weight: 700;
     color: $title-color;
 }
+
 %nav-title {
     font-family: $secondary-fonts;
     font-size: 18px;
     font-weight: 700;
     color: $prymary-color;
 }
+
 %block-text {
     font-family: $secondary-fonts;
     font-size: 18px;
     font-weight: 400;
     color: $block-color;
+}
+
+%block-animation {
+    transition-property: background-color;
+    transition-duration: 200 ms;
+    transition-timing-function: linear;
+    background-color: $bc-prymary-color;
+    cursor: pointer;
 }

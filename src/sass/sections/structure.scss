@@ -1,0 +1,107 @@
+.structure__title {
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  font-family: $prymary-fonts;
+  font-size: 20px;
+  font-weight: 700;
+  color: $title-color;
+  margin-bottom: 22px;
+  @media (min-width: 768px) and (max-width: 1439px) {
+    width: 620px;
+   justify-content: flex-start;
+    margin-bottom: 68px;
+    font-size: 33px;
+  }
+  @media (min-width: 1440px) {
+    width: 1300px;
+    justify-content: flex-start;
+    margin-bottom: 68px;
+    font-size: 33px;
+  }
+  &:before {
+    content: "";
+    display: block;
+    background-color: $bc-prymary-color;
+    margin-right: 10px;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    background-image: url(../../images/icon/icon-title-1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+
+.structure-list {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 58px;
+  &__item {
+    box-shadow: 1.5px 2.598px 8px 0px rgba(0, 0, 0, 0.102);
+    width: 280px;
+    height: 260px;
+    margin: 0px auto 14px;
+    border-radius: 0px 30px;
+    padding: 18px;
+    @media (min-width: 768px) and (max-width: 1439px) {
+      margin: 0px 0px 22px;
+    }
+    &--orange {
+      background-color: $bc-orange;
+    }
+    &--red {
+      background-color: $bc-red;
+    }
+    &--fiolet {
+      background-color: $bc-fiolet;
+    }
+    &--blue {
+      background-color: $bc-blue;
+    }
+    @media (min-width: 1440px) {
+      margin: 0;
+    }
+  }
+  @media (min-width: 768px) and (max-width: 1439px) {
+    width: 620px;
+    margin: 0 auto 54px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  @media (min-width: 1440px) {
+    width: 1300px;
+    margin: 0px 0px 116px;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.item-block {
+  padding-left: 28px;
+  border-radius: 0px 30px;
+  border: 1px dashed $prymary-color;
+  width: 242px;
+  height: 223px;
+  &__title {
+    font-family: $secondary-fonts;
+    font-size: 25px;
+    font-weight: 700;
+    color: $title-color;
+    @media (min-width: 768px) {
+      font-size: 30px;
+    }
+  }
+  &__text {
+    font-family: $secondary-fonts;
+    font-size: 16px;
+    font-weight: 400;
+    color: $block-color;
+    @media (min-width: 1440px) {
+      font-size: 18px;
+    }
+  }
+}

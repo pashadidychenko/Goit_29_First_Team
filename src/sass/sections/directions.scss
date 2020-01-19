@@ -2,6 +2,14 @@
     max-width: 1920px;
     margin: 0;
     padding: 0 20px;
+    margin-bottom: 40px;
+    @media (min-width: 768px) and (max-width: 1439px) {
+        margin-bottom: 70px;
+    }
+    @media (min-width: 1440px) {
+        margin-bottom: 85px;
+        margin: 0 auto;
+    }
 }
 
 .directions__title {
@@ -37,6 +45,7 @@
 }
 
 .directions__list {
+    position: relative;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -46,6 +55,16 @@
     max-width: 280px;
     @media (min-width: 768px) and (max-width: 1439px) {
         max-width: 620px;
+        &::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 10px;
+            height: 10px;
+            background: radial-gradient(center, #f3f3f3, transparent);
+        }
     }
     @media (min-width: 1440px) {
         max-width: 1300px;
@@ -55,6 +74,26 @@
 .directions__list-item {
     margin: 0;
     padding: 0;
+    @media (min-width: 768px) and (max-width: 1439px) {
+        border-width: 0;
+        &:nth-child(1) .directions__item {
+            border-right-width: 1px;
+        }
+        &:nth-child(2) .directions__item {
+            border-bottom-width: 1px;
+        }
+        &:nth-child(3) .directions__item {
+            border-top-width: 1px;
+        }
+        &:nth-child(4) .directions__item {
+            border-left-width: 1px;
+        }
+    }
+    &:last-child .directions__item {
+        @media (min-width: 1440px) {
+            border: none;
+        }
+    }
 }
 
 .directions__item {
@@ -90,7 +129,7 @@
         height: 295px;
         margin-bottom: 0;
         border-style: dashed;
-        border-width: 1px;
+        border-width: 0;
         border-color: #e3e3e4;
     }
     @media (min-width: 1440px) {
