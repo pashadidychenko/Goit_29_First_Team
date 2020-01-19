@@ -107,7 +107,6 @@
 .title__learn {
   display: flex;
   align-items: center;
-  margin-left: 25px;
 }
 
 .learn__item-text {
@@ -150,10 +149,10 @@
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1440px) {
   .section__learn {
-    background-color: #fafafa;
-    width: 100%;
+    background-image: url(../images/learn_png/bg.jpg);
+    width: 1300px;
     margin: 0 auto;
   }
 
@@ -172,12 +171,13 @@
     margin-top: 70px;
     padding-left: 0px;
     padding-bottom: 100px;
-    max-width: 1234px;
+    max-width: 1440px;
   }
 
   .learn__item {
-    width: 235px;
-    margin-right: 40px;
+    width: 245px;
+    margin: 0;
+    margin-right: 80px;
   }
 
   .learn__wrap {
@@ -186,6 +186,11 @@
 
   .section__learn {
     padding-top: 100px;
+    width: 1920px;
+  }
+  .learn__wrap--container {
+    width: 1300px;
+    margin: 0 auto;
   }
 }
 
