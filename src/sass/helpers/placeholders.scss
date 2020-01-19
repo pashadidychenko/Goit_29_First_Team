@@ -18,11 +18,3 @@
     font-weight: 400;
     color: $block-color;
 }
-
-%block-animation {
-    transition-property: background-color;
-    transition-duration: 200 ms;
-    transition-timing-function: linear;
-    background-color: $bc-prymary-color;
-    cursor: pointer;
-}
