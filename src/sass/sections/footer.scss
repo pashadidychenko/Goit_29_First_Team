@@ -1,0 +1,134 @@
+.footer {
+  background-color: $title-color;
+  &-content {
+    width: 208px;
+    @media (min-width: 768px) and (max-width: 1439px) {
+      width: 620px;
+    }
+    @media (min-width: 1439px) {
+      width: 1300px;
+    }
+  }
+  &-list {
+    list-style: none;
+    @media (min-width: 768px) {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+}
+
+.second-footer {
+  background-color: $footer-color;
+  &-list {
+    width: 208px;
+    margin: 0 auto;
+    padding: 15px 0px;
+    @media (min-width: 768px) and (max-width: 1439px) {
+      width: 620px;
+      display: flex;
+    }
+    @media (min-width: 1439px) {
+      width: 1300px;
+      display: flex;
+    }
+    &__item {
+      list-style: none;
+      @media (min-width: 768px) and (max-width: 1439px) {
+        padding-right: 36px;
+      }
+      @media (min-width: 1439px) {
+        padding-right: 76px;
+      }
+    }
+  }
+}
+
+.second-footer-list__item-title {
+  color: $footer-secondary-text;
+  font-size: 12px;
+  font-family: $prymary-fonts;
+  font-weight: 700;
+}
+
+.list-social {
+  width: 150px;
+  list-style: none;
+  padding: 34px 18px 34px 0px;
+  display: flex;
+  justify-content: space-between;
+  @media (min-width: 768px) and (max-width: 1439px) {
+    margin: 0 auto;
+  }
+  &__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 37px;
+    height: 37px;
+    cursor: pointer;
+    &--cyan {
+      background-color: #3d99e3;
+    }
+    &--blue {
+      background-color: #2e4d72;
+    }
+    &--red {
+      background-color: #ba1f2e;
+    }
+  }
+  &__icon {
+    width: 22px;
+    height: 22px;
+    fill: $prymary-color;
+  }
+}
+
+.footer-list {
+  margin: 0;
+  padding: 42px 0px 0px;
+  &__button {
+    border-style: none;
+    border-radius: 5px;
+    background-color: $bc-prymary-color;
+    width: 192px;
+    height: 42px;
+    font-family: $prymary-fonts;
+    font-size: 16px;
+    font-weight: 700;
+    color: #f6f9fa;
+  }
+  &__text {
+    font-family: $secondary-fonts;
+    font-size: 14px;
+    font-weight: 400;
+    color: $footer-text;
+    line-height: 1.786;
+  }
+  &__logo {
+    width: 100px;
+    height: 26px;
+    cursor: pointer;
+    @media (min-width: 768px) {
+      width: 108px;
+      height: 28px;
+    }
+  }
+  &__item {
+    @media (min-width: 1439px) {
+      width: 206px;
+    }
+  }
+}
+
+.footer-list__item--full {
+  @media (min-width: 1439px) {
+    width: 518px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 100px;
+  }
+}

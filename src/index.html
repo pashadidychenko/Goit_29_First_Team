@@ -1,25 +1,35 @@
 <!DOCTYPE html>
 <html lang="uk">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <meta name="autor" content="GoIt_29_First_Team">
-    <title>GoITeens</title>
-    <!-- Сюда будет всталена ссылка на файл стилей -->
-    <!-- inject:css -->
-    <!-- endinject -->
-  </head>
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+  <meta name="autor" content="GoIt_29_First_Team">
+  <title>GoITeens</title>
+  <!-- Сюда будет всталена ссылка на файл стилей -->
+  <!-- inject:css -->
+  <!-- endinject -->
+</head>
 
-  <body>
-    <!-- Сюда будет всталена ссылка на файл скриптов -->
-    <!-- inject:js -->
-    <!-- endinject -->
-    //= ./html/header.html
-    //= ./html/description.html
-    //= ./html/directions.html
-    //= ./html/learning.html
-    //= ./html/structure.html
-    //= ./html/footer.html
-  </body>
+<body>
+<!-- Сюда будет всталена ссылка на файл скриптов -->
+<!-- inject:js -->
+<!-- endinject -->
+//= ./html/header.html
+//= ./html/description.html
+//= ./html/directions.html
+//= ./html/learning.html
+//= ./html/structure.html
+//= ./html/footer.html
+//= ./html/arrow.html
+<script>
+  const button = document.querySelector('.header__burger');
+  const header = document.querySelector('.header');
+
+  button.addEventListener('click', function() {
+    button.classList.toggle('is-active');
+    header.classList.toggle('nav-open');
+  });
+</script>
+</body>
 </html>
