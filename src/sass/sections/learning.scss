@@ -152,8 +152,9 @@
 @media (min-width: 1440px) {
   .section__learn {
     background-image: url(../images/learn_png/bg.jpg);
-    width: 1300px;
+    max-width: 100%;
     margin: 0 auto;
+    margin-bottom: 118px;
   }
 
   .learn__item--wrap {
@@ -162,7 +163,7 @@
   }
   .title__learn--text {
     text-transform: uppercase;
-    font-size: 39px;
+    font-size: 33px;
   }
 
   .learn--container {

@@ -1,7 +1,3 @@
-/*
- * Все паршалы импортировать в этот файл
- */
-
 @import "normalize.scss";
 @import "base.scss";
 @import "./helpers/fonts.scss";
@@ -13,3 +9,4 @@
 @import "./sections/learning.scss";
 @import "./sections/structure.scss";
 @import "./sections/footer.scss";
+@import "./sections/arrow.scss";
